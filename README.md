@@ -2,6 +2,7 @@
 <div>
 	<h1 align="center"> Instagram Clone</h1>
 	<p align="center">A simple and easy to use Instagram Clone made using ReactJS and Firebase. </p>
+	<img src="https://github.com/ajay-jagtap/instagram-clone/blob/master/resources/instagram-clone-img.png" />
 </div>
 
 
