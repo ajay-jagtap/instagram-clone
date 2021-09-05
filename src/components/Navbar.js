@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav>
       <div className="nav__container">
         <div className="nav__navlogo">
-          <Link to="/home">Instgram Clone</Link>
+          <Link to="/home">Instagram</Link>
         </div>
 
         <div className="nav__menu">

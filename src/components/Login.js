@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import { Context } from "../Context/GlobalState";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import LoadingInstagram from "./LoadingInstagram";
+import "../assets/css/login.css";
+import logo from '../assets/images/logo.png';
+import appStore from '../assets/images/app-store.png';
+import googlePlay from '../assets/images/google-play.png';
 
 export default function Login({ history }) {
   const [email, setEmail] = useState("");
@@ -46,34 +50,33 @@ export default function Login({ history }) {
   }
 
   return (
-    <div className="login__container">
-      <h1>Instagram Clone</h1>
-      <div className="form__area">
-        <div className="form">
+    <div id="wrapper">
+      <div className="container">
+        <div className="phone-app-demo"></div>
+        <div className="form-data">
           <form onSubmit={handlelogin}>
-            <div className="form__field">
-              <input
-                type="email"
-                id="Email"
-                name="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <label htmlFor="Email">Email</label>
+            <div className="logo">
+              <img src={logo} alt="logo" />
             </div>
-            <div className="form__field">
-              <input
-                type="password"
-                id="password"
-                name="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-              <label htmlFor="Password">Password</label>
-            </div>
-            <button className="primary-insta-btn" disabled={isLoading}>
+            <input
+              type="email"
+              id="Email"
+              name="Email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              name="Password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <button className="form-btn" disabled={isLoading}>
               {!isLoading ? (
                 "Log In"
               ) : (
@@ -90,22 +93,35 @@ export default function Login({ history }) {
                 <small>{OAuthError}</small>
               </div>
             )}
-            <div className="google__login">
-              <button className="btn__authGoogle" onClick={handleGoogleLogin}>
-                Log in with Google
-              </button>
-            </div>
-            <a href="#!" className="forgotPassword">
-              Forgot Password?
-            </a>
+            <span className="has-separator">Or</span>
+            <button className="form-btn">
+              <a className="google-login" onClick={handleGoogleLogin}>
+                <i className="fab fa-google"></i> Log in with Google
+              </a>
+            </button>
+            <a className="password-reset" href="#">Forgot password?</a>
           </form>
-        </div>
-        <div className="signup__area">
-          <p>
-            Don't have and account? <Link to="/signup">Signup</Link>
-          </p>
+
+          <div className="sign-up">
+            Don't have an account? <Link to="/signup">Sign up</Link>
+          </div>
+          <div className="get-the-app">
+            <span>Get the app.</span>
+            <div className="badges">
+              <img src={appStore} alt="app-store badge" />
+              <img src={googlePlay} alt="google-play badge" />
+            </div>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <div className="container">
+          <div className="copyright-notice">
+            © 2021 Instagram from Ajay
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
