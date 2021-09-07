@@ -93,7 +93,7 @@ export default function Signup({ history }) {
               )}
             </button>
             <div className="auth__error">
-              <small>{authError}</small>
+              {authError}
             </div>
             <p className="policies">
               By signing up, you agree to our Terms , Data Policy and Cookies

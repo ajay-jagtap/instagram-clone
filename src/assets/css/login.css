@@ -206,6 +206,11 @@ footer .container {
     text-align: center;
 }
 
+.auth__error {
+  margin: 1em 0 1em 0;
+  color: red;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 900px) {

@@ -85,12 +85,12 @@ export default function Login({ history }) {
             </button>
             {authError && (
               <div className="auth__error">
-                <small>{authError}</small>
+                {authError}
               </div>
             )}
             {OAuthError && (
               <div className="auth__error">
-                <small>{OAuthError}</small>
+                {OAuthError}
               </div>
             )}
             <span className="has-separator">Or</span>
