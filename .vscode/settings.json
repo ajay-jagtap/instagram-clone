@@ -1,0 +1,112 @@
+{
+  // Editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 26,
+  "editor.fontLigatures": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.renderWhitespace": "none",
+  "editor.tabCompletion": "on",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.autoClosingQuotes": "never",
+  "[vue, html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": false,
+  // Explorer
+  "explorer.decorations.badges": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.sideBar.location": "left",
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "zenMode.fullScreen": false,
+  "zenMode.hideTabs": false,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "git.enableSmartCommit": true,
+  "files.associations": {
+    "*.php_cs": "php",
+    ".nycrc": "json",
+    "*.vue": "vue"
+  },
+  // Git VC
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // Formatting Code:
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.format.enable": false,
+  "php.suggest.basic": true,
+  "headwind.runOnSave": false,
+  "files.defaultLanguage": "JavaScript",
+  // ESlint
+  "eslint.runtime": "node",
+  "eslint.nodePath": "/usr/local/bin/node",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.run": "onSave",
+  "eslint.validate": ["vue", "html", "javascript"],
+  // Prettier Config
+  "prettier.semi": true,
+  "prettier.arrowParens": "always",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.insertPragma": false,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.endOfLine": "lf",
+  "prettier.enable": true,
+  "prettier.printWidth": 100,
+  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.startupEditor": "none",
+  "redhat.telemetry.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": false
+  },
+  "liveshare.anonymousGuestApproval": "reject",
+  "liveshare.autoShareServers": false,
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "liveshare.allowGuestDebugControl": false,
+  "liveshare.allowGuestTaskControl": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "gitlens.views.commits.showBranchComparison": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+}
