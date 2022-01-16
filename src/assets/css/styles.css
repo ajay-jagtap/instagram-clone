@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -29,7 +29,18 @@ nav .nav__container .nav__navlogo {
   flex: 2;
   font-size: large;
   text-decoration: none;
-  background: -webkit-linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fd1d1d, #f77737, #fcaf45, #ffdc80);
+  background: -webkit-linear-gradient(
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #fd1d1d,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -83,7 +94,7 @@ nav .nav__menu a {
   position: relative;
 }
 
-div[role="menu"] {
+div[role='menu'] {
   width: 200px;
   visibility: hidden;
   background: #fff;
@@ -100,7 +111,7 @@ div[role="menu"] {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
-div[role="menu"] a {
+div[role='menu'] a {
   font-size: small;
   padding: 0.3rem;
   text-decoration: none;
@@ -108,19 +119,19 @@ div[role="menu"] a {
   padding-left: 1rem;
 }
 
-div[role="menu"] a svg {
+div[role='menu'] a svg {
   vertical-align: middle;
 }
 
-div[role="menu"] a:hover {
+div[role='menu'] a:hover {
   background-color: #1b1b1b1e;
 }
 
-div[role="menu"] a:not(:nth-child(1)) {
+div[role='menu'] a:not(:nth-child(1)) {
   margin-top: 0.5rem;
 }
 
-div[role="menu"].visible {
+div[role='menu'].visible {
   visibility: visible;
 }
 
@@ -311,7 +322,19 @@ mark {
 .signup__container h1 {
   text-align: center;
   font-size: 1.5em;
-  background: -webkit-linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fd1d1d, #f77737, #fcaf45, #ffdc80);
+  background: -webkit-linear-gradient(
+    135deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #fd1d1d,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -497,6 +520,7 @@ mark {
   background: #fff;
   border-radius: 2rem;
   padding: 2rem;
+  width: 40vw;
 }
 
 @media screen and (max-width: 500px) {
